@@ -1,0 +1,453 @@
+{% set title = "Товар" %}
+{% set classPage = "product-pg" %}
+{% extends "./includes/layouts/page.twig" %}
+
+{% block breadcrumbs %}
+<!-- BREAD CRUMB -->
+<div class="bread-crumb">
+	<div class="bread-crumb__container container">
+		<a href="#" class="bread-crumb__item">Главная</a>
+		<span class="bread-crumb__item">Товар</span>
+	</div>
+</div>
+{% endblock breadcrumbs %}
+
+{% block content %}
+<!-- MAIN -->
+<main>
+	<div class="product">
+		<div class="container">
+			<h1 class="product__title title-2">
+				<span>Ламинат Ter Hurne Dureco Камень Драгоценно-Белый B01 2817</span>
+			</h1>
+			<div class="product__row">
+				<div class="product__viewsBox">
+					<!-- gallery product -->
+					<div class="product__gallery gallery">
+						<!-- thumbs slider -->
+						<div class="gallery__thumbsWrap">
+							<div class="gallery__thumbs swiper">
+								<div class="swiper-wrapper">
+									<div class="gallery__thumbs-item swiper-slide">
+										<img src="./assets/img/pages/productCard/img-1.jpg" alt="">
+									</div>
+									<div class="gallery__thumbs-item swiper-slide">
+										<img src="./assets/img/pages/productCard/img-2.jpg" alt="">
+									</div>
+									<div class="gallery__thumbs-item swiper-slide">
+										<img src="./assets/img/pages/productCard/img-1.jpg" alt="">
+									</div>
+									<div class="gallery__thumbs-item swiper-slide">
+										<img src="./assets/img/pages/productCard/img-2.jpg" alt="">
+									</div>
+									<div class="gallery__thumbs-item swiper-slide">
+										<img src="./assets/img/pages/productCard/img-1.jpg" alt="">
+									</div>
+									<div class="gallery__thumbs-item swiper-slide">
+										<img src="./assets/img/pages/productCard/img-2.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- full imgage slider -->
+						<div class="gallery__sliderWrap slider-wrap">
+							<!-- labels -->
+							<div class="productLabels">
+								<div class="productLabel productLabel--stock">
+									акция
+								</div>
+								<div class="productLabel productLabel--new">
+									new
+								</div>
+								<div class="productLabel">
+									хит
+								</div>
+							</div>
+							<div class="gallery__slider swiper">
+								<div class="swiper-wrapper">
+									<div class="gallery__slider-slide swiper-slide">
+										<img src="./assets/img/pages/productCard/img-1.jpg" alt="">
+										<a class="gallery__fullScreenBtn"
+											href="./assets/img/pages/productCard/img-1.jpg"
+											data-fslightbox="prodGallery">
+											<span class="gallery__fullScreenBtn-inner">
+												<span class="gallery__fullScreenBtn-ic">
+													<svg>
+														<use xlink:href="./assets/img/icons/sprite.svg#loop">
+														</use>
+													</svg>
+												</span>
+												Увеличить
+											</span>
+										</a>
+									</div>
+									<div class="gallery__slider-slide swiper-slide">
+										<img src="./assets/img/pages/productCard/img-2.jpg" alt="">
+										<a class="gallery__fullScreenBtn"
+											href="./assets/img/pages/productCard/img-2.jpg"
+											data-fslightbox="prodGallery">
+											<span class="gallery__fullScreenBtn-inner">
+												<span class="gallery__fullScreenBtn-ic">
+													<svg>
+														<use xlink:href="./assets/img/icons/sprite.svg#loop">
+														</use>
+													</svg>
+												</span>
+												Увеличить
+											</span>
+										</a>
+									</div>
+									<div class="gallery__slider-slide swiper-slide">
+										<img src="./assets/img/pages/productCard/img-1.jpg" alt="">
+										<a class="gallery__fullScreenBtn"
+											href="./assets/img/pages/productCard/img-1.jpg"
+											data-fslightbox="prodGallery">
+											<span class="gallery__fullScreenBtn-inner">
+												<span class="gallery__fullScreenBtn-ic">
+													<svg>
+														<use xlink:href="./assets/img/icons/sprite.svg#loop">
+														</use>
+													</svg>
+												</span>
+												Увеличить
+											</span>
+										</a>
+									</div>
+									<div class="gallery__slider-slide swiper-slide">
+										<img src="./assets/img/pages/productCard/img-2.jpg" alt="">
+										<a class="gallery__fullScreenBtn"
+											href="./assets/img/pages/productCard/img-2.jpg"
+											data-fslightbox="prodGallery">
+											<span class="gallery__fullScreenBtn-inner">
+												<span class="gallery__fullScreenBtn-ic">
+													<svg>
+														<use xlink:href="./assets/img/icons/sprite.svg#loop">
+														</use>
+													</svg>
+												</span>
+												Увеличить
+											</span>
+										</a>
+									</div>
+									<div class="gallery__slider-slide swiper-slide">
+										<img src="./assets/img/pages/productCard/img-1.jpg" alt="">
+										<a class="gallery__fullScreenBtn"
+											href="./assets/img/pages/productCard/img-1.jpg"
+											data-fslightbox="prodGallery">
+											<span class="gallery__fullScreenBtn-inner">
+												<span class="gallery__fullScreenBtn-ic">
+													<svg>
+														<use xlink:href="./assets/img/icons/sprite.svg#loop">
+														</use>
+													</svg>
+												</span>
+												Увеличить
+											</span>
+										</a>
+									</div>
+									<div class="gallery__slider-slide swiper-slide">
+										<img src="./assets/img/pages/productCard/img-2.jpg" alt="">
+										<a class="gallery__fullScreenBtn"
+											href="./assets/img/pages/productCard/img-2.jpg"
+											data-fslightbox="prodGallery">
+											<span class="gallery__fullScreenBtn-inner">
+												<span class="gallery__fullScreenBtn-ic">
+													<svg>
+														<use xlink:href="./assets/img/icons/sprite.svg#loop">
+														</use>
+													</svg>
+												</span>
+												Увеличить
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- nav -->
+							<div class="gallery-nav slider-nav">
+								<button class="slider-arr slider-arr--prev btnArr" type="button">
+									<svg>
+										<use xlink:href="./assets/img/icons/sprite.svg#arr-circ-right">
+										</use>
+									</svg>
+								</button>
+								<button class="slider-arr slider-arr--next btnArr" type="button">
+									<svg>
+										<use xlink:href="./assets/img/icons/sprite.svg#arr-circ-right">
+										</use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- details product -->
+				<div class="product__details">
+					<div class="product__availability availability-label availability-label--available">
+						В наличии
+					</div>
+					<div class="product__specific">
+						<div class="product__specific-item">
+							<p>Производитель: <span>Classen</span></p>
+							<p>Класс износостойкости: <span>32</span></p>
+							<p>Фаска: <span>4-сторонняя фаска</span></p>
+							<p>Древесина: <span>дуб </span></p>
+						</div>
+					</div>
+					<div class="product__price mt-20">
+						Цена: от 84.5 руб. - до 270 р.
+					</div>
+					<div class="product__btns">
+						<button class="productCard__buy btn js-openModal" data-type-modal="order"
+							type="button">Купить</button>
+					</div>
+					<div class="table-wrap mt-20">
+						<table class="table-2 fz-12 fz-sm-10">
+							<thead>
+								<tr>
+									<th>
+										<div>Размер</div>
+									</th>
+									<th>
+										<div>Наличие</div>
+									</th>
+									<th>
+										<div>Цена</div>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div>
+											<label class="b-radio">
+												<input class="b-radio__input" type="radio" name="name" value="val"
+													checked>
+												<span class="b-radio__custom"></span>
+												<span class="b-radio__content">800x8000</span>
+											</label>
+										</div>
+									</td>
+									<td>
+										<div>
+											В наличии
+										</div>
+									</td>
+									<td>
+										<div>
+											54 р.
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div>
+											<label class="b-radio">
+												<input class="b-radio__input" type="radio" name="name" value="val">
+												<span class="b-radio__custom"></span>
+												<span class="b-radio__content">800x8000</span>
+											</label>
+										</div>
+									</td>
+									<td>
+										<div>
+											В наличии
+										</div>
+									</td>
+									<td>
+										<div>
+											54 р.
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div>
+											<label class="b-radio">
+												<input class="b-radio__input" type="radio" name="name" value="val">
+												<span class="b-radio__custom"></span>
+												<span class="b-radio__content">800x8000</span>
+											</label>
+										</div>
+									</td>
+									<td>
+										<div>
+											В наличии
+										</div>
+									</td>
+									<td>
+										<div>
+											54 р.
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- tabs -->
+			<div class="product__tabs b-tabs">
+				<!-- nav -->
+				<div class="b-tabs__links">
+					<a class="b-tabs__link active" href="#content-1">Описание</a>
+					<a class="b-tabs__link" href="#content-2">Характеристики</a>
+				</div>
+				<!-- content block -->
+				<div class="b-tabs__content">
+					<!-- pane -->
+					<div class="b-tabs__pane active defaultText" id="content-1">
+						<p>Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные
+							тексты. Рот составитель большого буквенных, назад текстов точках маленький эта
+							имеет.</p>
+						<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+							тексты. Он лучше, путь за пустился рыбного предупреждал океана ведущими.
+							Грамматики пунктуация эта алфавит на берегу лучше.</p>
+					</div>
+					<!-- pane -->
+					<div class="b-tabs__pane" id="content-2">
+						<!-- table -->
+						<div class="tableDetails tableDetails--small">
+							<!-- table row -->
+							<div class="tableDetails__row">
+								<div class="tableDetails__row-col">
+									<p>Бренд</p>
+								</div>
+								<div class="tableDetails__row-col">
+									<p>Ter Hurne</p>
+								</div>
+							</div>
+							<!-- table row -->
+							<div class="tableDetails__row">
+								<div class="tableDetails__row-col">
+									<p>Коллекция</p>
+								</div>
+								<div class="tableDetails__row-col">
+									<p>Dureco</p>
+								</div>
+							</div>
+							<!-- table row -->
+							<div class="tableDetails__row">
+								<div class="tableDetails__row-col">
+									<p>Страна производства</p>
+								</div>
+								<div class="tableDetails__row-col">
+									<p>Германия</p>
+								</div>
+							</div>
+							<!-- table row -->
+							<div class="tableDetails__row">
+								<div class="tableDetails__row-col">
+									<p>Свойства</p>
+								</div>
+								<div class="tableDetails__row-col">
+									<p>антибактериальное, антистатическое, влагостойкое</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- similar products -->
+	<section class="section">
+		<div class="container">
+			<h2 class="title-1 section__title"><span>Похожие товары</span></h2>
+			<div class="products-b">
+				<div class="products-b__list">
+					<!-- card -->
+					<div class="productCard productCard--type-2">
+						<a href="#" class="productCard__img">
+							<img src="./assets/img/components/productsSlider/img-1.jpg" alt="Какой-то текст">
+						</a>
+						<div class="productCard__textBox">
+							<div class="productCard__name">
+								Ламинат Classen Дуб Андерсон
+							</div>
+							<div class="productCard__price">
+								<div class="productCard__price-inner">
+									<span class="productCard__price-val">
+										42 000 руб.
+									</span>
+									<del class="productCard__price-old">8.5 руб.</del>
+								</div>
+							</div>
+							<div class="productCard__btns">
+								<button class="productCard__buy btn js-openModal" data-type-modal="order"
+									type="button">Купить</button>
+							</div>
+						</div>
+					</div>
+					<!-- card -->
+					<div class="productCard productCard--type-2">
+						<a href="#" class="productCard__img">
+							<img src="./assets/img/components/productsSlider/img-2.jpg" alt="Какой-то текст">
+						</a>
+						<div class="productCard__textBox">
+							<div class="productCard__name">
+								Ламинат Classen Дуб Андерсон
+							</div>
+							<div class="productCard__price">
+								<div class="productCard__price-inner">
+									<span class="productCard__price-val">
+										42 руб.
+									</span>
+									<del class="productCard__price-old">8.5 руб.</del>
+								</div>
+							</div>
+							<div class="productCard__btns">
+								<a class="productCard__buy btn" href="#">Купить</a>
+							</div>
+						</div>
+					</div>
+					<!-- card -->
+					<div class="productCard productCard--type-2">
+						<a href="#" class="productCard__img">
+							<img src="./assets/img/components/productsSlider/img-3.jpg" alt="Какой-то текст">
+						</a>
+						<div class="productCard__textBox">
+							<div class="productCard__name">
+								Ламинат Classen Дуб Андерсон
+							</div>
+							<div class="productCard__price">
+								<div class="productCard__price-inner">
+									<span class="productCard__price-val">
+										42 руб.
+									</span>
+									<del class="productCard__price-old">8.5 руб.</del>
+								</div>
+							</div>
+							<div class="productCard__btns">
+								<a class="productCard__buy btn" href="#">Купить</a>
+							</div>
+						</div>
+					</div>
+					<!-- card -->
+					<div class="productCard productCard--type-2">
+						<a href="#" class="productCard__img">
+							<img src="./assets/img/components/productsSlider/img-1.jpg" alt="Какой-то текст">
+						</a>
+						<div class="productCard__textBox">
+							<div class="productCard__name">
+								Ламинат Classen Дуб Андерсон
+							</div>
+							<div class="productCard__price">
+								<div class="productCard__price-inner">
+									<span class="productCard__price-val">
+										42 000 руб.
+									</span>
+									<del class="productCard__price-old">8.5 руб.</del>
+								</div>
+							</div>
+							<div class="productCard__btns">
+								<a class="productCard__buy btn" href="#">Купить</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+{% endblock content %}

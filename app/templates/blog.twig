@@ -1,0 +1,48 @@
+{% set title = "Оплата" %}
+{% set classPage = "blog-pg" %}
+{% extends "./includes/layouts/page.twig" %}
+
+{% block breadcrumbs %}
+<!-- BREAD CRUMB -->
+<div class="bread-crumb">
+	<div class="bread-crumb__container container">
+		<a href="#" class="bread-crumb__item">Главная</a>
+		<span class="bread-crumb__item">Оплата</span>
+	</div>
+</div>
+{% endblock breadcrumbs %}
+
+{% block content %}
+	<!-- MAIN -->
+	<main>
+		<div class="container">
+			<h1 class="title-1"><span>Новости</span></h1>
+			<div class="blog-b">
+				<div class="blog-b__container">
+					<div class="blog-b__notes">
+						<!-- note -->
+						<div class="blog-note">
+							<div class="blog-note__img">
+								<img src="./../assets/img/test/prod-kover.jpg" alt="">
+							</div>
+							<div class="blog-note__textBox">
+								<a href="tsvet-kovra/" class="blog-note__title">Цвет ковра</a>
+								<div class="blog-note__text">
+									<p>Перед тем, как приступить к подбору ковра, решите какой цвет вам больше всего подходит, в зависимости освещенности комнаты и расположения окон.</p>
+								</div>
+								<div class="blog-note__control">
+									<div class="note-metadata">
+										<div class="note-metadata__item note-metadata__item--category">
+											<svg><use xlink:href="assets/templates/kovri/img/icons/sprite.svg#clock_fill"></use></svg>
+											03.03.2022
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+{% endblock content %}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="ArtBro">
+	<title>{{ title|length ? title : 'New' }}</title>
+	<!-- swiper css -->
+	<link rel="stylesheet" href="assets/vendors/swiper/swiper-bundle.min.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="./assets/style/css/style.css">
+</head>
+
+<body>
+	<div class="page {{ classPage|length ? classPage : '' }}">
+		{# ------ HEADER ----- #}
+		{% block header %}
+		{% include "../organisms/header.twig" %}
+		{% endblock %}
+
+		<!-- modal window - application -->
+		<div class="v-modal" data-type-modal="application">
+			<div class="v-modal__inner">
+				<form class="v-modal__form application-f" action="#">
+					<div class="v-modal__form-inner">
+						<div class="v-modal__close js-closeModal"></div>
+						<h4 class="v-modal__title title-1"><span>Оставить заявку</span></h4>
+						<div class="v-modal__application">
+							<div class="b-input">
+								<div class="b-input__input">
+									<input type="text" name="username" placeholder="Имя">
+								</div>
+							</div>
+							<div class="b-input">
+								<div class="b-input__input">
+									<input type="email" name="email" placeholder="E-mail">
+								</div>
+							</div>
+							<div class="b-input">
+								<div class="b-input__input">
+									<input type="tel" name="tel" placeholder="Телефон">
+								</div>
+							</div>
+							<div class="b-input">
+								<div class="b-input__input">
+									<textarea type="text" name="message" placeholder="Комментарий"></textarea>
+								</div>
+							</div>
+							<button class="application-f__submit btnGo" type="submit" href="#">
+								<span class="btnGo__text">Отправить</span>
+								<span class="btnGo__arrWrap">
+									<svg class="btnGo__arr">
+										<use xlink:href="./assets/img/icons/sprite.svg#arr-tr-right">
+										</use>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="v-modal" data-type-modal="order">
+			<div class="v-modal__inner">
+				<!-- form -->
+				<form class="v-modal__form order-modal" action="#">
+					<div class="v-modal__close js-closeModal"></div>
+					<div class="v-modal__form-inner">
+						<!-- title -->
+						<div class="v-modal__title title-2">
+							<span>Оформить заказ!</span>
+						</div>
+						<!-- application form -->
+						<div class="v-modal__application application-f">
+							<div class="prod-order">
+								<div class="prod-order__img">
+									<img src="assets/img/test/prod-kover.jpg" alt="">
+								</div>
+								<div class="prod-order__title">Ковёр Коллекция Рингольд
+								</div>
+								<div class="prod-order__totalBox">
+									<div class="b-select">
+										<select>
+											<option value="1" selected>По умолчанию</option>
+											<option value="5">Еще по чем-то</option>
+											<option value="5">Еще по чем-то</option>
+										</select>
+									</div>
+									<div class="prod-order__quantity number-slider number-slider--type-2">
+										<button class="number-slider__down js-number-slider-reduce" type="button"
+											aria-label="Увеличить на еденицу">-</button>
+										<input type="number" min="1" step="1" value="1"
+											class="number-slider__input js-number-slider-input">
+										<button class="number-slider__up js-number-slider-add" type="button"
+											aria-label="Уменьшить на еденицу">+</button>
+									</div>
+									<div class="prod-order__price">1000 RUB</div>
+								</div>
+							</div>
+							<!-- inputs -->
+							<div class="application-f__inputs">
+								<div class="b-input">
+									<div class="b-input__input">
+										<input type="text" name="name" placeholder="Имя">
+									</div>
+								</div>
+								<div class="b-input">
+									<div class="b-input__input">
+										<input type="tel" id="af_tel" name="tel" placeholder="Телефон" inputmode="text">
+									</div>
+								</div>
+								<div class="b-input">
+									<div class="b-input__input">
+										<input type="email" name="mail" placeholder="Почта">
+									</div>
+								</div>
+								<div class="b-input">
+									<div class="b-input__input">
+										<textarea name="msg" placeholder="Сообщение"></textarea>
+									</div>
+								</div>
+							</div>
+							<p class="v-modal__hint mt-16" style="margin: 0 auto; max-width: 630px;">
+								Мы не передадим ваш телефон третьим лицам, только позвоним и подробно проконсультируем
+								по всем вопросам, которые действительно для Вас важны.
+							</p>
+							<button class="application-f__submit btnGo" href="#" type="submit">
+								<span class="btnGo__text">Отправить</span>
+								<span class="btnGo__arrWrap">
+									<svg class="btnGo__arr">
+										<use xlink:href="./assets/img/icons/sprite.svg#arr-tr-right">
+										</use>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		{# ------ BREADCRUMBS ----- #}
+		{% block breadcrumbs %}{% endblock %}
+
+		<!-- CONTENT WRAP -->
+		<div class="content-wrap" {% if content_wrap.attrs %}{{content_wrap.attrs}}{% endif %}>
+			{% block content %}{% endblock %}
+		</div>
+
+		{# ------ FOOTTER ----- #}
+		{% block footer %}
+		{% include "../organisms/footer.twig" %}
+		{% endblock %}
+
+		{# ------ COMMON ----- #}
+		{% block common %}{% endblock %}
+	</div>
+
+	{# ------ SCRIPTS ----- #}
+	{% block scripts %}
+	<!-- jquery js -->
+	<script src="assets/vendors/jquery/jquery.min.js"></script>
+	<!-- swiper js -->
+	<script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+	<!-- fslightbox js -->
+	<script src="assets/vendors/fslightbox/fslightbox.js"></script>
+	<!-- inputMask js -->
+	<script src="assets/vendors/inputMask/inputMask.min.js"></script>
+	<!-- main js -->
+	<script src="assets/js/main.js"></script>
+	{% endblock %}
+</body>
+
+</html>

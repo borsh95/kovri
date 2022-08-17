@@ -1,0 +1,33 @@
+{% set title = "Спасибо" %}
+{% set classPage = "notify-pg thanks-pg" %}
+{% set content_wrap = {
+	attrs: 'style="background-image: url(./assets/img/pages/notify/notify-bg.png)"',
+} %}
+
+{% extends "./includes/layouts/page.twig" %}
+
+{% block content %}
+	<!-- MAIN -->
+	<main>
+		<div class="container">
+			<h1>Cпасибо за заказ!</h1>
+			<p>Наш менеджер свяжется с Вами в рабочее время. </p>
+			<div class="firm-info firm-info--clock">
+				<svg class="firm-info__ic">
+					<use xlink:href="./assets/img/components/firm-ic/sprite.svg#firm-info__clock">
+					</use>
+				</svg>
+				пн-пт: 10.00-20.00, сб-вс: 10.00-18.00
+			</div>
+			<a class="btnGo" href="#">
+				<span class="btnGo__text">На главную</span>
+				<span class="btnGo__arrWrap">
+					<svg class="btnGo__arr">
+						<use xlink:href="./assets/img/icons/sprite.svg#arr-tr-right">
+						</use>
+					</svg>
+				</span>
+			</a>
+		</div>
+	</main>
+{% endblock content %}

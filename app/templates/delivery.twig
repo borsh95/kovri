@@ -1,0 +1,49 @@
+{% set title = "Доставка" %}
+{% set classPage = "customers-pg" %}
+{% extends "./includes/layouts/page.twig" %}
+
+{% block breadcrumbs %}
+<!-- BREAD CRUMB -->
+<div class="bread-crumb">
+	<div class="bread-crumb__container container">
+		<a href="#" class="bread-crumb__item">Главная</a>
+		<span class="bread-crumb__item">Доставка</span>
+	</div>
+</div>
+{% endblock breadcrumbs %}
+
+{% block content %}
+	<!-- MAIN -->
+	<main>
+		<div class="container">
+			<h1 class="title-1"><span>Доставка</span></h1>
+			<div class="deliveryInfo-b">
+				<div class="deliveryInfo-b__container">
+					<!-- illustrated Methods -->
+					<div class="deliveryInfo-b__methods deliveryMethods">
+						<div class="deliveryMethods__list row-cols-6 row-cols-sm-12">
+							<!-- item -->
+							<div class="deliveryMethods__item">
+								<div class="deliveryMethods__item-title">
+									Есть возможность  примерки 2-3 ковров в интерьере ( детали оговариваются с менеджером )
+								</div>
+								<div class="deliveryMethods__item-text">
+										По городу Минску осуществляется в день заказа
+								</div>
+							</div>
+							<!-- item -->
+							<div class="deliveryMethods__item">
+								<div class="deliveryMethods__item-title">
+									Доставка по всей стране - <br> курьерской службой до двери
+								</div>
+								<div class="deliveryMethods__item-text">
+										( доставка бесплатно при покупке ковра от 300 Рублей) в среднем доставка около 20
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+{% endblock content %}

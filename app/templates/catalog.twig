@@ -1,0 +1,367 @@
+{% set title = "Каталог" %}
+{% set classPage = "catalog-pg" %}
+{% extends "./includes/layouts/page.twig" %}
+
+{% block breadcrumbs %}
+<!-- BREAD CRUMB -->
+<div class="bread-crumb">
+	<div class="bread-crumb__container container">
+		<a href="#" class="bread-crumb__item">Главная</a>
+		<span class="bread-crumb__item">Каталог</span>
+	</div>
+</div>
+{% endblock breadcrumbs %}
+
+{% block content %}
+<!-- MAIN -->
+<main>
+	<div class="container">
+		<h1 class="title-1"><span>Ковры в лофт</span></h1>
+		<!-- panel -->
+		<div class="panel-b">
+			<div class="panel-b__inner">
+				<!-- panel sidebar -->
+				<div class="panel-b__sidebar">
+					<!-- catalog menu -->
+					<div class="catalogMenu">
+						<div class="catalogMenu__title">Категории</div>
+						<ul>
+							<li>
+								<a href="#">
+									Ламинат
+								</a>
+							</li>
+							<li>
+								<a href="#">Ламинат Tarkett</a>
+							</li>
+							<li class="active">
+								<a href="#">Ламинат Egger</a>
+							</li>
+							<li>
+								<a href="#">Ламинат Kastamonu</a>
+							</li>
+							<li>
+								<a href="#">Ламинат Classen</a>
+							</li>
+							<li>
+								<a href="#">Ламинат Ideal</a>
+							</li>
+							<li>
+								<a href="#">Ламинат Quick Step</a>
+							</li>
+							<li>
+								<a href="#">Ламинат Elesgo</a>
+							</li>
+							<li>
+								<a href="#">
+									Паркетная доска
+								</a>
+							</li>
+							<li>
+								<a href="#">Ламинат Tarkett</a>
+							</li>
+							<li>
+								<a href="#">Ламинат Egger</a>
+							</li>
+							<li>
+								<a href="#">Ламинат Kastamonu</a>
+							</li>
+							<li>
+								<a href="#">Ламинат Classen</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- panel content -->
+				<div class="panel-b__content">
+					<div class="producers-b">
+						<div class="producers-b__row">
+							<a class="producerCard" href="kovryi/">
+								<span class="producerCard__name">Ковры</span>
+							</a>
+							<a class="producerCard" href="rasprodazha1/">
+								<span class="producerCard__name">Распродажа</span>
+							</a>
+							<a class="producerCard" href="kovrovyie-dorozhki/">
+								<span class="producerCard__name">Ковровые Дорожки</span>
+							</a>
+							<a class="producerCard" href="prikrovatnyie/">
+								<span class="producerCard__name">Прикроватные</span>
+							</a>
+							<a class="producerCard" href="kovryi-ruchnoj-rabotyi/">
+								<span class="producerCard__name">Ковры ручной работы</span>
+							</a>
+							<a class="producerCard" href="ovchina-i-shkuryi-korov/">
+								<span class="producerCard__name">Овчина и шкуры коров</span>
+							</a>
+							<a class="producerCard" href="detskie-kovryi/">
+								<span class="producerCard__name">Детские ковры</span>
+							</a>
+							<a class="producerCard" href="klassicheskie/">
+								<span class="producerCard__name">Классические</span>
+							</a>
+							<a class="producerCard" href="novinki/">
+								<span class="producerCard__name">Новинки</span>
+							</a>
+							<a class="producerCard" href="top-2021/">
+								<span class="producerCard__name">Топ 2021</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- filter -->
+					<form class="filter">
+						<div class="filter__inner">
+							<div class="filter__field">
+								<div class="filter__selects">
+									<div class="b-select">
+										<select name="class">
+											<option value="">Производитель</option>
+											<option value="1000">32</option>
+											<option value="2000">31</option>
+											<option value="3000">30</option>
+											<option value="4000">29</option>
+										</select>
+									</div>
+									<div class="b-select">
+										<select name="type">
+											<option value="">Размер</option>
+											<option value="2000">1</option>
+											<option value="3000">2</option>
+											<option value="4000">2</option>
+										</select>
+									</div>
+									<div class="b-select">
+										<select name="size">
+											<option value="">Цвет</option>
+											<option value="2000">1</option>
+											<option value="3000">2</option>
+											<option value="4000">2</option>
+										</select>
+									</div>
+									<div class="b-select">
+										<select name="design">
+											<option value="">Вид</option>
+											<option value="2000">1</option>
+											<option value="3000">2</option>
+											<option value="4000">2</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="filter__field">
+								<div class="row gy-15 align-items-center justify-content-center">
+									<div class="filter__item slider-from-to js-slider" data-slider-start="0"
+										data-slider-end="80">
+										<div class="slider-from-to__inputs">
+											<div class="slider-from-to__title">Цена<span>(BYN)</span></div>
+											<label class="slider-from-to__label" data-subtext="от">
+												<input class="slider-from-to__input js-slider-input" type="number"
+													min="0" max="3000" placeholder="0">
+											</label>
+											<label class="slider-from-to__label" data-subtext="до ">
+												<input class="slider-from-to__input js-slider-input" type="number"
+													min="0" max="3000" placeholder="1000">
+											</label>
+										</div>
+										<div class="slider-from-to__slider js-slider-handles"></div>
+									</div>
+									<div class="filter__btns">
+										<div class="btns btns--multiline justify-content-center">
+											<button class="btn btn--secondary filter__submit" type="submit"
+												aria-label="Применить фильтр">
+												Применить фильтр
+											</button>
+											<button class="btn filter__reset btn--light" type="reset"
+												aria-label="Сбросить фильтр">
+												Сбросить фильтр
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+
+					<!-- sort-f -->
+					<form class="sort-f" action="#">
+						<div class="sort-f__container">
+							<div class="sort-f__row">
+								<span>
+									Сортировать:
+								</span>
+								<div class="selectWrap">
+									<select>
+										<option value="1" selected>По умолчанию</option>
+										<option value="5">Еще по чем-то</option>
+										<option value="5">Еще по чем-то</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</form>
+
+					<!-- products-b -->
+					<div class="products-b">
+						<div class="products-b__list">
+							<!-- card -->
+							<div class="productCard productCard--type-2">
+								<a href="#" class="productCard__img">
+									<img src="./assets/img/components/productsSlider/img-1.jpg" alt="Какой-то текст">
+								</a>
+								<div class="productCard__textBox">
+									<div class="productCard__name">
+										Ламинат Classen Дуб Андерсон
+									</div>
+									<div class="productCard__price">
+										<div class="productCard__price-inner">
+											<span class="productCard__price-val">
+												42 000 руб.
+											</span>
+											<del class="productCard__price-old">8.5 руб.</del>
+										</div>
+									</div>
+									<div class="productCard__btns">
+										<a class="productCard__buy btn" href="#">Купить</a>
+									</div>
+								</div>
+							</div>
+							<!-- card -->
+							<div class="productCard productCard--type-2">
+								<a href="#" class="productCard__img">
+									<img src="./assets/img/components/productsSlider/img-2.jpg" alt="Какой-то текст">
+								</a>
+								<div class="productCard__textBox">
+									<div class="productCard__name">
+										Ламинат Classen Дуб Андерсон
+									</div>
+									<div class="productCard__price">
+										<div class="productCard__price-inner">
+											<span class="productCard__price-val">
+												42 руб.
+											</span>
+											<del class="productCard__price-old">8.5 руб.</del>
+										</div>
+									</div>
+									<div class="productCard__btns">
+										<a class="productCard__buy btn" href="#">Купить</a>
+									</div>
+								</div>
+							</div>
+							<!-- card -->
+							<div class="productCard productCard--type-2">
+								<a href="#" class="productCard__img">
+									<img src="./assets/img/components/productsSlider/img-3.jpg" alt="Какой-то текст">
+								</a>
+								<div class="productCard__textBox">
+									<div class="productCard__name">
+										Ламинат Classen Дуб Андерсон
+									</div>
+									<div class="productCard__price">
+										<div class="productCard__price-inner">
+											<span class="productCard__price-val">
+												42 руб.
+											</span>
+											<del class="productCard__price-old">8.5 руб.</del>
+										</div>
+									</div>
+									<div class="productCard__btns">
+										<a class="productCard__buy btn" href="#">Купить</a>
+									</div>
+								</div>
+							</div>
+							<!-- card -->
+							<div class="productCard productCard--type-2">
+								<a href="#" class="productCard__img">
+									<img src="./assets/img/components/productsSlider/img-1.jpg" alt="Какой-то текст">
+								</a>
+								<div class="productCard__textBox">
+									<div class="productCard__name">
+										Ламинат Classen Дуб Андерсон
+									</div>
+									<div class="productCard__price">
+										<div class="productCard__price-inner">
+											<span class="productCard__price-val">
+												42 000 руб.
+											</span>
+											<del class="productCard__price-old">8.5 руб.</del>
+										</div>
+									</div>
+									<div class="productCard__btns">
+										<a class="productCard__buy btn" href="#">Купить</a>
+									</div>
+								</div>
+							</div>
+							<!-- card -->
+							<div class="productCard productCard--type-2">
+								<a href="#" class="productCard__img">
+									<img src="./assets/img/components/productsSlider/img-2.jpg" alt="Какой-то текст">
+								</a>
+								<div class="productCard__textBox">
+									<div class="productCard__name">
+										Ламинат Classen Дуб Андерсон
+									</div>
+									<div class="productCard__price">
+										<div class="productCard__price-inner">
+											<span class="productCard__price-val">
+												42 руб.
+											</span>
+											<del class="productCard__price-old">8.5 руб.</del>
+										</div>
+									</div>
+									<div class="productCard__btns">
+										<a class="productCard__buy btn" href="#">Купить</a>
+									</div>
+								</div>
+							</div>
+							<!-- card -->
+							<div class="productCard productCard--type-2">
+								<a href="#" class="productCard__img">
+									<img src="./assets/img/components/productsSlider/img-3.jpg" alt="Какой-то текст">
+								</a>
+								<div class="productCard__textBox">
+									<div class="productCard__name">
+										Ламинат Classen Дуб Андерсон
+									</div>
+									<div class="productCard__price">
+										<div class="productCard__price-inner">
+											<span class="productCard__price-val">
+												42 руб.
+											</span>
+											<del class="productCard__price-old">8.5 руб.</del>
+										</div>
+									</div>
+									<div class="productCard__btns">
+										<a class="productCard__buy btn" href="#">Купить</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- pagination -->
+						<ul class="pagination">
+							<li class="page-item disabled">
+								<a class="page-link" href="#">
+									<svg>
+										<use xlink:href="./assets/img/icons/sprite.svg#arr-tr-right"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="page-item active"><a class="page-link" href="blog/">1</a></li>
+							<li class="page-item"><a class="page-link" href="blog/?page=2">2</a></li>
+							<li class="page-item"><a class="page-link" href="blog/?page=3">3</a></li>
+							<li class="page-item"><a class="page-link" href="blog/?page=4">4</a></li>
+							<li class="page-item"><a class="page-link" href="blog/?page=5">5</a></li>
+							<li class="page-item"><a class="page-link" href="#">
+									<svg>
+										<use xlink:href="./assets/img/icons/sprite.svg#arr-tr-right"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{% endblock content %}

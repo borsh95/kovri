@@ -1,0 +1,26 @@
+{% set title = "404" %}
+{% set classPage = "notify-pg err-pg" %}
+{% set content_wrap = {
+	attrs: 'style="background-image: url(./assets/img/pages/notify/notify-bg.png)"',
+} %}
+
+{% extends "./includes/layouts/page.twig" %}
+
+{% block content %}
+	<!-- MAIN -->
+	<main>
+		<div class=" container">
+			<h1>404</h1>
+			<p>Извините! Страница, которую Вы ищете, не может быть найдена</p>
+			<a class="btnGo" href="#">
+				<span class="btnGo__text">На главную</span>
+				<span class="btnGo__arrWrap">
+					<svg class="btnGo__arr">
+						<use xlink:href="./assets/img/icons/sprite.svg#arr-tr-right">
+						</use>
+					</svg>
+				</span>
+			</a>
+		</div>
+	</main>
+{% endblock content %}

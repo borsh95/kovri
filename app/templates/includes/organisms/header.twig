@@ -1,0 +1,203 @@
+{% set baseClass = class.base|default('header') %}
+{% set resultClass = createBemClass(baseClass, _context.class) %}
+{% set attrss = "" %}
+
+{% if attrs %}
+{% for key, value in attrs  %}
+{% set attrss = " " ~ attrss ~ key ~ "=" ~ value %}
+{% endfor %}
+{% endif %}
+
+<!-- HEADER -->
+<header class="{{ resultClass }}" {{ attrss }}>
+	<!-- container header -->
+	<div class="header__container container">
+		<!-- header aside -->
+		<div class="header__aside">
+			<!-- logo -->
+			<a class="header__logo logo" href="#">
+				<img src="./assets/img/logo.png" alt="logo">
+			</a>
+		</div>
+		<!-- body header -->
+		<div class="header__body">
+			<!-- row header -->
+			<div class="header__row ml-xs-auto">
+				<!-- tels -->
+				<div class="header__sci sci mr-sm-0 ml-xs-auto">
+					<a class=" sci__link sci__link--tel" href="tel:+375296064910">
+						<svg>
+							<use xlink:href="./assets/img/icons/sprite.svg#sci__phone"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--tg" href="https://msngr.link/tg/375296064910">
+						<svg>
+							<use xlink:href="./assets/img/icons/sprite.svg#sci__tg"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--viber" href="https://msngr.link/vi/375296064910">
+						<svg>
+							<use xlink:href="./assets/img/icons/sprite.svg#sci__viber"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--phone d-xs-none" href="tel:+375296064910">
+						+375&nbsp;29&nbsp;<span class="fw-500 color-primary">606&nbsp;49&nbsp;10</span>
+					</a>
+				</div>
+				<div class="header__firm-info firm-info firm-info--work d-sm-none">
+					<img class="firm-info__ic" src="./assets/img/components/firm-ic/firm-ic__by.png" alt="">
+					Работаем по всей Беларуси
+				</div>
+				<button class="header__search-toggle search-toggle ml-auto ml-xs-16 mr-16 mr-sm-0" data-search-toggle
+					type="button">
+					<svg>
+						<use xlink:href="assets/img/icons/sprite.svg#loop">
+						</use>
+					</svg>
+				</button>
+				<!-- sct list -->
+				<div class="header__sciLinks vt-center d-sm-none">
+					<a class="sci-link" target="_blank" href="#">
+						<img src="./assets/img/icons/insta.png" alt="">
+					</a>
+				</div>
+			</div>
+			<!-- row header -->
+			<div class="header__row">
+				<!-- burger -->
+				<div class="header__burger">
+					<div class="header__burger-inner">
+						<!-- navigation -->
+						<nav class="header__nav bro-menu">
+							<ul class="menu bro-menu__container">
+								<li class="menu__item menu__item--drop">
+									<button class="menu__item-toggle hamburger" type="button"
+										aria-label="Открыть подменю">
+										<span></span>
+									</button>
+									<a class="menu__link" href="#"><span>КАТАЛОГ</span></a>
+									<ul class="menu__submenu">
+										<li class="menu__item">
+											<a class="menu__link" href="#">
+												<span>Ламинат</span>
+												<span class="menu__arr">
+													<svg>
+														<use xlink:href="./assets/img/icons/sprite.svg#arr-tr-right">
+														</use>
+													</svg>
+												</span>
+											</a>
+											<ul class="menu__submenu">
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Ламинат Tarkett</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span> Ламинат Egger</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Ламинат Kastamonu</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Ламинат Classen</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Ламинат Ideal</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Ламинат Quick Step</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#">
+												<span>Паркетная доска</span>
+											</a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#">
+												<span>Виниловые полы</span>
+											</a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#">
+												<span>Пробковое покрытие</span>
+											</a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#">
+												<span>Штучный паркет</span>
+											</a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#">
+												<span>Терассная доска</span>
+											</a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#">
+												<span>Дизайнерские полы</span>
+											</a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#">
+												<span>Сопутствующие товары</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#"><span>О компании</span></a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">
+										<span>Покупателям</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#"><span>Шоу-Рум</span></a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#"><span>Контакты</span></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<!-- button -->
+				<button class="header__callback btn btn--border js-openModal d-sm-none ml-auto mr-0" type="button"
+					data-type-modal="application">Заказать звонок</button>
+				<!-- hamburger -->
+				<button class="header__hamburger hamburger" type="button" aria-label="Открыть меню">
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- search panel -->
+	<div class="header__search-panel search-panel open" data-search-panel="">
+		<div class="search-panel__container container">
+			<div class="search-panel__inner">
+				<input type="search" placeholder="Поиск">
+				<button type="button" aria-label="Закрыть поиск" data-search-close="">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.97 47.97">
+						<path
+							d="M28.23,24,47.09,5.12A3,3,0,0,0,42.85.88L24,19.74,5.12.88A3,3,0,0,0,.88,5.12L19.74,24,.88,42.85A3,3,0,0,0,3,48a3,3,0,0,0,2.12-.88L24,28.23,42.85,47.09a3,3,0,0,0,4.24-4.24Z">
+						</path>
+					</svg>
+				</button>
+			</div>
+		</div>
+	</div>
+</header>

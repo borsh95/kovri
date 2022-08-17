@@ -1,0 +1,53 @@
+/*==================== ATOMS ====================*/
+
+.selectWrap {
+	display: inline-block;
+	overflow: hidden;
+	background-image: url(./../../img/icons/arr-tr-down.png);
+	background-repeat: no-repeat;
+	background-position: right 5px center;
+
+	select {
+		cursor: pointer;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		flex: 1;
+		display: block;
+		padding: 0 20px 0 0;
+		height: 100%;
+		width: 100%;
+		font-size: inherit;
+		font-family: inherit;
+		color: inherit;
+		background-color: transparent;
+	}
+}
+
+.search-toggle {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	width: 30px;
+	border: 2px solid var(--color-primary);
+	border-radius: 50%;
+	text-align: center;
+	transition: background-color $duration;
+
+	svg {
+		display: block;
+		width: 50%;
+		height: 50%;
+		fill: var(--color-primary);
+		transition: fill $duration;
+	}
+
+	&:hover {
+		background-color: var(--color-primary);
+		svg {
+			fill: #fff;
+		}
+	}
+}
