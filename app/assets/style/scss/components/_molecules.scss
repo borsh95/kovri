@@ -652,6 +652,7 @@ table {
 		display: block;
 		width: 100%;
 		overflow: hidden;
+		height: 301px;
 
 		&::before {
 			content: "";
@@ -770,6 +771,10 @@ table {
 		&--type-2 {
 			#{$this}__textBox {
 				padding: 15px 10px 20px;
+			}
+
+			#{$this}__img{
+				height: 170px;
 			}
 
 			#{$this}__name {
