@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f0b25ed-f070-4ff6-8dce-bdf2b194d3ba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/assets/style/scss/components/_molecules.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/style/scss/components/_molecules.scss" afterDir="false" />
-    </list>
+    <list default="true" id="5f0b25ed-f070-4ff6-8dce-bdf2b194d3ba" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +26,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flowers_layout" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -40,11 +38,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660836107565</updated>
-      <workItem from="1660836108761" duration="142000" />
+      <workItem from="1660836108761" duration="361000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1660836471348">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1660836471348" />
   </component>
 </project>
