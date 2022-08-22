@@ -26,7 +26,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flowers_layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -39,6 +39,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660836107565</updated>
       <workItem from="1660836108761" duration="361000" />
+      <workItem from="1661154284824" duration="248000" />
     </task>
     <servers />
   </component>
